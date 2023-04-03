@@ -1,12 +1,9 @@
-const quantityLi = document.querySelectorAll(".item");
-console.log("Number of categories: ", quantityLi.length);
+const firstValue = document.querySelectorAll(".item");
+console.log("Number of categories : " + firstValue.length);
 
-const listWithClass = document.querySelectorAll('.item');
-console.log(`Number of categories: ${listWithClass.length}`);
-listWithClass.forEach(listEl => {
-  console.log('');
-  console.log(`Category: ${listEl.firstElementChild.textContent}`);
-  console.log(
-    `Elements: ${listEl.lastElementChild.querySelectorAll('li').length}`,
-  );
-});
+const secondValue = document.querySelectorAll(".item");
+secondValue.forEach((value) => {
+console.log(" ");
+console.log("Category : " + value.firstElementChild.textContent)
+console.log("Elements : " + value.lastElementChild.children.length)
+})
