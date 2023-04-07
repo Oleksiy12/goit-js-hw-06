@@ -11,7 +11,24 @@
     background-color: #fafafa;
     color: #212121;
     line-height: 1.5;
-    width: 100%;
   }
   
- 
+   
+  input {
+    padding: 8px;
+    font: inherit;
+  }
+  
+  button {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+
+  li{
+    margin: 50px`;
+  }
+
+  img{
+    width: 350px;
+  }
