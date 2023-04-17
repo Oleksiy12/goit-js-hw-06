@@ -7,9 +7,10 @@ const ingredients = [
     "Condiments",
   ]; 
 
+const firstItem = document.getElementById("ingredients");
+const newList = document.createElement("li");
 
-const firstValue = document.getElementById("ingredients");
-const result = ingredients.map((value) => {
-  return `<li class = "item">${value}</li>`;
-}).join("");
-firstValue.innerHTML= result 
+const result = ingredients.map(ingredient => {
+  newList.textContent = ingredient;
+  firstItem.append(newList)
+})
