@@ -8,9 +8,10 @@ const ingredients = [
   ]; 
 
 const firstItem = document.getElementById("ingredients");
-const newList = document.createElement("li");
-
-const result = ingredients.map(ingredient => {
-  newList.textContent = ingredient;
-  firstItem.append(newList)
+const replace = ingredients.map(ingredient => {
+  const list = document.createElement("li");
+  list.textContent = ingredient;
+  list.classList = "item";
+  return list;
 })
+firstItem.append(...replace)
